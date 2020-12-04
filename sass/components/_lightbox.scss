@@ -1,0 +1,62 @@
+.lightboxCon {
+    .lightbox {
+        display: none;
+        
+    }
+}
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    background-color: white;
+    .button {
+        height: 100%;
+        overflow: scroll;
+    }
+    
+    .close {
+        cursor: pointer;
+    position: relative;
+    top: 0px;
+    right: 20px;
+    font-size: 30px;
+    color: $main-text-color;
+    }
+    }
+    
+
+.mess-sub {
+    padding: 30px;
+        display: flex;
+        flex-direction: column;
+        p {
+            position: relative;
+            font-size: 16px;
+            top: 30vh;
+            left: 20px;
+            
+            color: pink;
+            z-index: 3;
+        }
+}
+.show-lb {
+    display: flex !important;
+}
+@media screen and (min-width: $tablet-size) {
+    .mess-sub  {
+        padding: 20px;
+        p{
+            top: 20vh;
+            font-size: 18px;
+        }
+    }
+}
+@media screen and (min-width: $desktop-size) {
+    .mess-sub  p {
+        top: 30vh;
+    }
+}

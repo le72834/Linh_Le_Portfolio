@@ -1,0 +1,49 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ce8d6b;
+    padding: 12px;
+    color: white;
+    p {
+        margin-top: 10px;
+    }
+    
+    .socialCon {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex: 1;
+            margin-top: 10px;
+            
+            li {
+                cursor: pointer;
+                padding: 10px;
+                transform: scale(1);
+                &:hover {
+                        transform: scale(1.1);
+                        transition: 0.4s ease-in-out;
+                    }
+            }
+            img {
+                height: 40px;
+                
+                
+                
+            }
+            
+        }
+    }
+}
+@media screen and (min-width: $desktop-size) {
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}

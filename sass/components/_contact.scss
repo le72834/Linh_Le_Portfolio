@@ -1,0 +1,123 @@
+.leave img {
+    width: 20px;
+    margin-top: 10vh;
+    margin-left: 40px;
+    animation: fadeInDown 2s 0.5s;
+}
+.contact-title {
+    color: $main-text-color;
+    h2 {
+        font-size: 25px;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin: 10px 0px 10px 40px;
+        animation: fadeInDown 2s 0.5s;
+    } 
+    p {
+       animation: fadeInLeft 2s 0.5s;
+        align-self: center;
+        margin-left: 40px;
+        margin-right: 20px;
+        font-style: italic;
+    }
+}
+#mail-form {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 30px 20px 30px;
+    
+    label {
+        display: block;
+        margin: 10px 0;
+        font-size: 18px;
+        font-weight: bold;
+        color:  #bb8888;
+        animation: fadeInLeft 1s 0.5s;
+    }
+    input[type=text], input[type=email], select, textarea {
+        padding: 15px;
+        border: 2px solid #ce8d6b;
+        border-radius: 5px;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 16px;
+        margin: 10px 0;
+        background-color:#faefef;
+        color: $main-text-color;
+        
+        &::placeholder {
+            color: $main-text-color;
+        }
+        
+    }
+    
+    .submit {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 18px;
+        border: none;
+        width: 60px;
+        margin-top: 20px;
+        display: inline-block;
+        padding: 15px;
+        border-radius: 5px;
+        background-color:#ce8d6b;
+        font-weight: bold;
+        color: white;
+        cursor: pointer;
+        &:hover {
+            background-color: #bb8888;
+            border: double;
+        }
+    }
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        div {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+    }
+}
+
+@media screen and (min-width: $tablet-size) {
+    .leave img {
+        margin-top: 12vh;
+        margin-left: 70px;
+}
+    .contact-title {
+        margin-left: 30px;
+    }
+    
+    .contact-form {
+        margin: 0px 40px 0px 40px;
+        
+    }
+    .submit {
+        margin-left: 40px;
+    }
+
+}
+
+@media screen and (min-width: $desktop-size) {
+    .leave img {
+        margin-top: 20vh;
+    }
+    #mail-form {
+    .contact-form {
+        display: flex;
+        flex-direction: row;
+        textarea {
+            height: 240px;
+        }
+        div:first-child {
+            max-width: 400px;
+        }
+        div:last-child {
+            float: right;
+            margin-left: 50px;
+        }
+
+    }
+}
+    
+}

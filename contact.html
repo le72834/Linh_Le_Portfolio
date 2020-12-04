@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+<body>
+    <main class="container">
+    <div class="nav-position">
+        <div class="main-nav-con scroll-menu">
+            <a href="#" class="logo"><img src="images/logoname.svg" alt="logo" ></a>
+            <div class="hamburger-nav-con">
+                <a class ="hamburger-con hamburger-con2 hamburger hamburger-scroll-menu"><span></span></a>
+                <nav class="main-nav">
+                    <h2 class="hidden">Main Navigation</h2>
+                    <ul>
+                        <li><a href="index.html">Portfolio</a></li>
+                        <li><a href="about.html">About me</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+    </div><!--Close nav position-->
+    <div class="leave"><img src="images/leave2.svg" alt="Leave icon"></div>
+    <div class="contact-title">
+        <h2>Let's connect</h2>
+        <p>Ready to start a project with me? I'll do my best to get in touch with you.</p>
+    </div>
+    
+        <form action="./includes/mail/send.php" method="POST" id="mail-form">
+
+        <div class="contact-form">
+            <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+        
+            <label for="gender">Choose your gender</label>
+            <select name="gender" id="gender">
+                <option value="female">Female</option>
+                <option value="male">Male</option>
+                <option value="other">Other</option>
+            </select>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            </div>
+
+            <div>
+            <label for="message">Message</label>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="How can I help you?"></textarea>
+            </div>
+        </div>
+
+        <div class="submit-wrapper">
+            <span class="submit" name="submit">Submit</span>
+           
+        </div>
+        
+    
+        </form>
+        <div class="lightboxCon">
+            <div class="lightbox">
+                <div class="nav-position">
+                    <div class="main-nav-con scroll-menu">
+                        <a href="#" class="logo"><img src="images/logoname.svg" alt="logo" ></a>
+                        <div class="closeCon">
+                        <i class="fa fa-close close"></i>
+                            
+                        </div>
+                    </div>
+        
+                </div><!--Close nav position-->
+            <div class="mess-sub">
+                <p></p>
+            </div>
+            </div>
+            </div>
+
+    <footer>
+        <p>© Linh Le. All Right Reserved.</p>
+        <nav class="socialCon">
+            <h2 class="hidden">Social Navigation</h2>
+            <ul>
+                <li><a href="https://www.facebook.com/"><img src="images/facebook.svg" alt="facebook icon"></a></li>
+                <li><a href="https://twitter.com/"><img src="images/twitter.svg" alt="twitter icon"></a></li>
+                <li><a href="https://www.instagram.com/"><img src="images/insta.svg" alt="instagram icon"></a></li>
+                <li><a href="https://www.youtube.com/"><img src="images/utube.svg" alt="youtube icon"></a></li>
+                
+            </ul>
+        </nav>
+
+    </footer>
+
+
+</main>
+    <script src="js/main.js" type="module"></script>
+    <script src="js/main_nav.js" type="module"></script>
+    <script src="js/contact.js" type="module"></script>
+
+</body>
+</html>
