@@ -1,4 +1,4 @@
-![All about me](./images/logo.svg)
+![All about me](./images/logoname.svg)
 
 # Portfolio
 This is my portfolio, you can view the [live demo](http://seishunri.ca/) here.

@@ -1,0 +1,110 @@
+.intro {
+    text-align: center;
+    background-image: url(../images/hero_image_small.svg);
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-attachment: inherit;
+    height: 300px;
+    padding-top: 15vh;
+    
+
+    h2 {
+        font-size: 20px;
+        padding-top: 12vh;
+        color: $main-text-color;
+    }
+    p {
+        margin-top: 10px;
+        margin-bottom: 30px;
+        color:rgb(95, 93, 93);
+        font-style: italic;
+    }
+    a {
+        color: $second-text-color;
+        border: 2px solid $second-text-color;
+        padding: 10px;
+        border-radius: 10px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        transition: all 0.3s;
+        background: none;
+        font-size: 14px;
+       
+        &:hover {
+            color:#fff;
+            background-color: $second-text-color;
+            transition: all 0.3s;
+        
+        }
+}
+}
+.leave-welcome img {
+    width: 25px;
+    position: absolute;
+    top: 330px;
+    left: 30px;
+}
+.welcome {
+    h2 {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 25px;
+        margin: 0 25px;
+        color: $main-text-color;
+    }
+    p {
+        font-size: 16px;
+        margin: 15px 25px;
+        color: $second-text-color;
+    }
+}
+@media screen and (min-width: $tablet-size) {
+    .intro {
+        width: 100%;
+        background-image: url(../images/hero_image.svg);
+        background-position: center ;
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-attachment: inherit;
+        height: 350px;
+        padding-top: 20vh;
+        h2 {
+            padding-top: 70px;
+        }
+    }
+    .leave-welcome img {
+        top: 500px;
+        left: 40px;
+    }
+    .welcome {
+        margin-left: 20px;
+        margin-right: 30px;
+    }
+}
+@media screen and (min-width: $desktop-size) {
+    .intro {
+        background-size: cover;
+       padding-top: 300px;
+       height: 500px;
+       h2 {
+           padding-top: 100px;
+           font-size: 25px;
+       }
+       p {
+           font-size: 18px;
+       }
+    }
+    .leave-welcome img {
+        top: 820px;
+    }
+    .welcome {
+        margin-top: 80px;
+        .welcomeCon {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+}
