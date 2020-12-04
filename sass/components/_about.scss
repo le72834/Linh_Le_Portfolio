@@ -1,0 +1,257 @@
+.leave-about img {
+    width: 25px;
+    margin-top: 17vh;
+    margin-left: 5vh;
+    animation: slideInDown 0.5s 0.2s;
+}
+.infoCon  {
+background-color: #ce8d6b;
+padding: 20px;
+h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 25px;
+    margin: 20px 25px;
+    color: #fff;
+    
+}
+.aboutCon {
+    color: #fff;
+    font-style: italic;
+    margin-left: 25px;
+    margin-right: 25px;
+    font-size: 16px;
+    .about1 {
+        margin-bottom: 20px;
+    }
+}
+
+}
+.skills {
+h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 25px;
+    margin: 20px 45px;
+    color: $main-text-color;
+}
+h3 {
+    text-transform: uppercase;
+    font-size: 16px;
+    margin: 20px 45px;
+    color: $main-text-color;
+    font-style: italic;
+}
+.line1 {
+    width: 45vh;
+    height: 4px;
+    background-color: $main-text-color;
+    margin-left: 7vh;
+}
+.line2 {
+    width: 45vh;
+    height: 4px;
+    background-color: $second-text-color;
+    margin-left: 7vh;
+}
+.line3 {
+    width: 45vh;
+    height: 4px;
+    background-color: #293c72;
+    margin-left: 7vh;
+}
+.line4 {
+    width: 45vh;
+    height: 4px;
+    background-color: #65654b;
+    margin-left: 7vh;
+}
+}
+.software h2 {
+text-transform: uppercase;
+    font-weight: bold;
+    font-size: 25px;
+    margin: 20px 45px;
+    color: $main-text-color;
+
+}
+.softwareCon {
+display: flex;
+flex-wrap: wrap;
+h3 {
+    font-weight: bold;
+    font-size: 18px;
+    margin: 20px 45px;
+    color: $main-text-color;
+}
+p{
+    font-size: 16px;
+    margin: 20px 45px;
+    color: $second-text-color;
+}
+}
+.leave-services  {
+img {
+width: 30px;
+margin-left: 7vh;
+animation: slideInDown 1s 0.2s;
+}
+h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 25px;
+    margin: 20px 45px;
+    color: $main-text-color;
+}
+}
+picture {
+margin-left: 40px;
+
+}
+.serviceText {
+
+background-color: #fcf7f3;
+padding: 30px 0;
+img {
+    width: 50px;
+    margin-left: 45px;
+    animation: slideInLeft 2s 0.2s;
+    
+}
+h3 {
+    text-transform: uppercase;
+    font-size: 14px;
+    margin: 10px 45px;
+    color: $main-text-color;
+    font-weight: bold;
+}
+p{
+    color: $second-text-color;
+    margin: 0px 45px 10px 45px;
+}
+}
+.resume {
+text-align: center;
+margin-bottom: 40px;
+h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: $main-text-color;
+
+}
+p {
+    color: $second-text-color;
+    margin-bottom: 40px;
+}
+a {
+    border: 2px solid #65654b;
+    padding: 20px;
+    cursor: pointer;
+    color:$second-text-color;
+    border-radius: 10px;
+    text-decoration: none;
+    &:hover {
+        background-color: #65654b;
+        color: #fff;
+    }
+    
+}
+}
+
+// tablet size
+@media screen and (min-width: $tablet-size) {
+.leave-about img {
+    margin-top: 12vh;
+    margin-left: 3vh;
+}
+.infoCon {
+    padding: 25px;
+}
+
+.skillCon {
+    margin-left: 10vh;
+h3 {
+    margin-top: 20px;
+}
+}
+.softwareCon {
+    margin-left: 120px;
+    h3 {
+        font-size: 20px;
+    }
+ 
+ }
+ .leave-services {
+     img {
+         margin-left: 4.5vh;
+     }
+ }
+ picture {
+     margin-left: 80px;
+ }
+ .serviceText {
+     display: grid;
+     grid-template-columns: 330px 330px;
+     padding-left: 4vh;
+ }
+}
+
+// desktop size
+@media screen and (min-width: $desktop-size) {
+.leave-about img {
+    margin-top: 20vh;
+    margin-left: 30px;
+}
+.aboutCon {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 30px;
+   
+    div:last-child {
+        margin-left: 20px;
+        margin-right: 40px;
+        max-width: 470px;
+    }
+}
+.skillCon {
+    margin-left: 30vh;
+.line1, .line2, .line3, .line4 {
+    width: 100vh;
+    animation: fadeInLeft 1s 0.5s;
+    }
+}
+.softwareCon {
+    margin-left: 30vh;
+    .motion {
+        margin: 0px 100px;
+    }
+    
+}
+.leave-services img {
+    margin-left: 50px;
+}
+picture {
+    margin: 0;
+}
+.serviceCon {
+    display: flex;
+    flex-direction: row;
+    
+    .serviceText {
+        height: 282px;
+        display: grid;
+        margin-left: 0;
+     grid-template-columns: 280px 280px;
+     padding-left: 0px;
+     
+     
+     p{
+         font-size: 12px;
+     }
+    }
+}
+}

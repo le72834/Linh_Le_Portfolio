@@ -1,0 +1,57 @@
+$main-text-color: #ce8d6b;
+$second-text-color:  #bb8888;
+$main-font-size: 16px;
+$main-font: Athelas,"Times New Roman", serif;
+$desktop-size: 1024px;
+$tablet-size: 670px;
+
+
+.hidden {
+    display: none;
+}
+
+.container {
+    min-width: 300px;
+    max-width: 1200px;
+}
+
+//Css animation from https://codepen.io/strapro/pen/dIqAH
+@keyframes slideInDown{
+    0% {
+        opacity: 0;
+        transform: translateY(-2000px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+@keyframes slideInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-2000px);
+
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
