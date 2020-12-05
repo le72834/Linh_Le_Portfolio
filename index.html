@@ -17,7 +17,7 @@
                     <nav class="main-nav">
                         <h2 class="hidden">Main Navigation</h2>
                         <ul>
-                            <li><a href="index.html">Portfolio</a></li>
+                            <li><a href="index.html" class="current">Portfolio</a></li>
                             <li><a href="about.html">About me</a></li>
                             <li><a href="contact.html">Contact</a></li>
                             
@@ -37,7 +37,7 @@
                 <h2>Welcome to my portfolio.</h2>
                 <div class="welcomeCon"> 
                 <div class="welcomeText">
-                    <p>I’m a front-end development. I love to solve a solution or make something beautiful. I like to making things that are useful to other people. Moreover,I like the joy of alaways learning, which springs from the nonrepeating nature of the task.</p>
+                    <p>I’m a front-end development. I love to solve a solution or make something beautiful. I like to making things that are useful to other people. Moreover, I like the joy of always learning, which springs from the nonrepeating nature of the task.</p>
                 </div>
                 <div class="welcomeText">
                     <p>Most of my work is making website, graphics and branding.  I think about how to design a website that can impact audience and company. How to make the user experience impressed with functional and design. Down here is my work so feel free to take a look.</p>
@@ -45,13 +45,41 @@
                 </div>
         
             </div>
+            <section id="app">
+                <buttoncomponent v-for="item in mediaCollection" :item="item" :key="item.id" @setmediatype="setComponent"></buttoncomponent>
+
+                <lightbox :item="currentItem" :mediatype="mediaType"></lightbox>
+
+            </section><!--Close app-->
+
+            <div class="resume">
+                <h2>Work with me!</h2>
+                <p>Let's check my resume to get know more about me!</p>
+                <a href="#">Download my resume</a>
+            </div>
+            <footer>
+                <p>© Linh Le. All Right Reserved.</p>
+                <nav class="socialCon">
+                    <h2 class="hidden">Social Navigation</h2>
+                    <ul>
+                        <li><a href="https://www.facebook.com/"><img src="images/facebook.svg" alt="facebook icon"></a></li>
+                        <li><a href="https://twitter.com/"><img src="images/twitter.svg" alt="twitter icon"></a></li>
+                        <li><a href="https://www.instagram.com/"><img src="images/insta.svg" alt="instagram icon"></a></li>
+                        <li><a href="https://www.youtube.com/"><img src="images/utube.svg" alt="youtube icon"></a></li>
+                        
+                    </ul>
+                </nav>
+        
+            </footer>
+
 
     </main>
 
 
 
 
-    <script src="js/main.js" type="module"></script>
-    <script src="js/main_nav.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script defer src='js/main.js' type='module'></script>
+    <script defer src="js/main_nav.js" type="module"></script>
 </body>
 </html>
