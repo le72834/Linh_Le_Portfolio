@@ -1,10 +1,10 @@
 .lightboxCon {
-    .lightbox {
+    .lightbox-contact {
         display: none;
         
     }
 }
-.lightbox {
+.lightbox-contact {
     display: none;
     position: fixed;
     top: 0;
@@ -39,13 +39,50 @@
             top: 30vh;
             left: 20px;
             
-            color: pink;
+            color: $second-text-color;
             z-index: 3;
         }
 }
 .show-lb {
     display: flex !important;
 }
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100vw;
+    background-color: white;
+    color: $main-text-color;
+    padding: 40px;
+    z-index: 3;
+    span{color: white;
+    font-size: 2rem;
+    cursor: pointer;}
+    h1 {
+        color: pink;
+    }
+    .lb-close {
+        cursor: pointer;
+    position: relative;
+    top: 0px;
+    right: 20px;
+    font-size: 35px;
+    color: $main-text-color;
+    font-family:"Arial Rounded MT Bold", Arial, Helvetica, sans-serif;
+    }
+}
+
+.show-lightbox {
+    display: block;
+    .image-player {
+        margin-top: 100px;
+        img {
+            width: 50%;
+        }
+    }
+}
+
 @media screen and (min-width: $tablet-size) {
     .mess-sub  {
         padding: 20px;

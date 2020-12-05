@@ -6,7 +6,7 @@ import { SendMail } from "./components/mail.js";
         messageBox = document.querySelector('.mess-sub p'),
         submitCon = document.querySelector('.lightboxCon'),
         close = document.querySelector('.close'),
-        lightbox = document.querySelector('.lightbox');
+        lightbox = document.querySelector('.lightbox-contact');
     
 
     function processMailFailure(result) {
