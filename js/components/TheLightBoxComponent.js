@@ -8,7 +8,7 @@ export default {
             <div class="lightboxScroll">
                 <div class="nav-position">
                     <div class="main-nav-con scroll-menu">
-                        <a href="#" class="logo"><img src="images/logoname.svg" alt="logo" ></a>
+                        <a href="index.html" class="logo"><img src="images/logoname.svg" alt="logo" ></a>
                         <div class="closeCon">
                         <span class="lb-close" @click="closelb">x</span>
                             
