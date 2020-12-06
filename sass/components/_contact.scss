@@ -65,7 +65,7 @@
         cursor: pointer;
         &:hover {
             background-color: #bb8888;
-            border: double;
+            transition: all 0.3s ease-in-out;
         }
     }
     .contact-form {

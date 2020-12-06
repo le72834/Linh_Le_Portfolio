@@ -14,12 +14,14 @@ import {fetchData} from "./components/DataMiner.js";
             fetchData('./includes/index.php').then(data =>{
                 this.mediaCollection = data;
             })
+            .catch(err => console.error(err));
         },
         methods: {
             setComponent(project) {
                 this.mediaType = project.mediatype;
                 this.currentItem = project;
                 document.querySelector('.lightbox').classList.add('show-lightbox');
+                
             }
         },
         components: {
@@ -28,5 +30,9 @@ import {fetchData} from "./components/DataMiner.js";
         }
 
     }).$mount("#app");
+
+
+
+
 
 })();
