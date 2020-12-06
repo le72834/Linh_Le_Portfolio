@@ -31,6 +31,11 @@ This is a basic HTML with Flex box and Grid layout. Some SASS, transitions and J
 ## Credits
 Linh Le 
 
+##URLs 
+Username and Password for the database
+Username : um4sx7mq23tdg
+Password : db_portfolioinfo
+
 
 ## License
 MIT
