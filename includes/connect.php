@@ -1,7 +1,7 @@
 <?php 
     $db_dsn = array( 
-        'host' => 'localhost',
-        'dbname' => 'db_portfolio',
+        'host' => 'giowm1196.siteground.biz',
+        'dbname' => 'db4gmg5ytntru6',
         'charset' => 'utf8'
     );
 
@@ -9,8 +9,8 @@
 
     //This is the DB credentials
 
-    $db_user = 'root';
-    $db_pass = 'root';
+    $db_user = 'um4sx7mq23tdg';
+    $db_pass = 'db_portfolioinfo';
 
     try{
         $pdo = new PDO($dsn, $db_user, $db_pass);
