@@ -5,7 +5,11 @@ $main-font: Athelas,"Times New Roman", serif;
 $desktop-size: 1024px;
 $tablet-size: 670px;
 
-
+body {
+    
+    scroll-behavior: smooth;
+}
+   
 .hidden {
     display: none;
 }

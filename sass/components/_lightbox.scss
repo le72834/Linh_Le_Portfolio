@@ -54,8 +54,14 @@
     width: 100vw;
     background-color: white;
     color: $main-text-color;
-    padding: 40px;
+    padding: 30px;
     z-index: 3;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    
+    .nav-position{
+        top:0;
+    }
     span{color: white;
     font-size: 2rem;
     cursor: pointer;}
@@ -75,13 +81,43 @@
 
 .show-lightbox {
     display: block;
+    
     .image-player {
-        margin-top: 100px;
-        img {
-            width: 50%;
+        h2 {
+            font-size: 22px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        p {
+            color: $second-text-color;
+            font-size: 18px;
+            margin: 10px 50px 10px 0px;
+            line-height: 20px;
+        }
+        .info-time {
+            margin-top: 100px;
+        }
+        .info-con1 {
+            video {
+                width: 85%;
+                margin-top: 15px;
+            }
+        }
+        .process-con {
+            h2 {
+                margin-top: 20px;
+            }
+            p{
+                margin-right: 60px;
+            }
+            img {
+                width: 80%;
+                margin: 10px 0px;
+            }
         }
     }
 }
+
 
 @media screen and (min-width: $tablet-size) {
     .mess-sub  {
@@ -91,9 +127,48 @@
             font-size: 18px;
         }
     }
+    .image-player {
+        margin-left: 60px;
+        margin-top: 100px;
+        .info-time {
+            display: flex;
+            flex-direction: row;
+            
+            .info-con {
+                display: flex;
+                flex-direction: row;
+            }
+        }
+        .info-con1 {
+            margin-top: 20px;
+            margin-right: 20px;
+            video {
+                margin-left: 20px;
+            }
+        }
+
+        .process-con {
+            img {
+                padding-left: 25px;
+            }
+        }
+        
+    }
 }
 @media screen and (min-width: $desktop-size) {
     .mess-sub  p {
         top: 30vh;
+    }
+    .image-player {
+        margin-left: 100px;
+        .info-time {
+            display: flex;
+            flex-direction: column;
+        }
+        .process-con {
+            img {
+                padding-left: 30px;
+            }
+        }
     }
 }

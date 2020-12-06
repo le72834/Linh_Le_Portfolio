@@ -13,7 +13,7 @@ $results = [];
 $visitor_name = '';
 $visitor_email = '';
 $visitor_message = '';
-$to = $_POST['gender'];
+
 // $my_email = array('male' => 'noreply@seishunri.ca', 'female' => 'linhkhanh1127@gmail.com');
 
 
@@ -50,7 +50,7 @@ $results['name'] = $visitor_name;
 $results['message'] = $visitor_message;
 
 $email_subject = '';
-//$email_recipient = 'noreply@seishunri.ca';
+$email_recipient = 'linhkhanh1127@gmail.com';
 
 
 //sprinf - Return a formatted string
@@ -58,30 +58,15 @@ $email_message = sprintf('Name: %s, Email: %s, Message: %s', $visitor_name, $vis
 // $email_message .="Option Selected:".clean_string($_POST['gender']);
 
 $email_headers = array(
-    'From' => $to,
-    'Reply-To' => $visitor_email,
+    'From' => 'linhkhanh1127@gmail.com',
+    'Reply-To' => $visitor_name.'<'.$vistor_email.'>',
     
     // 'From'=>$visitor_email
 );
-//condition to switching email if user select option
-switch($to) {
-    case "female":
-        $my_email = 'linhkhanh1127@gmail.com';
-    break;
-    case "male":
-        $my_email = 'noreply@seishunri.ca';
-    break;
-    case "other":
-        $my_email = 'noreply@seishunri.ca';
-    
-}
-$results['gender'] = $my_email;
-
-
 
 //Send out the email
 //mail() is a PHP function that sends out email
-$email_result = mail($to, $email_subject, $email_message, $email_headers, $my_email);
+$email_result = mail($email_recipient, $email_subject, $email_message, $email_headers);
 if ($email_result) {
     $results['message'] = sprintf('Thank you for contacting us, %s. You will get a reply within 24 hours.', $visitor_name);
     
