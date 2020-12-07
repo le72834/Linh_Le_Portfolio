@@ -43,31 +43,31 @@ h3 {
     font-style: italic;
 }
 .line1 {
-    width: 45vh;
+    width: 300px;
     height: 4px;
     background-color: $main-text-color;
-    margin-left: 7vh;
+    margin-left: 45px;
     animation: fadeInLeft 0.5s 0.5s;
 }
 .line2 {
-    width: 45vh;
+    width: 300px;
     height: 4px;
     background-color: $second-text-color;
-    margin-left: 7vh;
+    margin-left: 45px;
     animation: fadeInLeft 1s 0.5s;
 }
 .line3 {
-    width: 45vh;
+    width: 300px;
     height: 4px;
     background-color: #293c72;
-    margin-left: 7vh;
+    margin-left: 45px;
     animation: fadeInLeft 1.5s 0.5s;
 }
 .line4 {
-    width: 45vh;
+    width: 300px;
     height: 4px;
     background-color: #65654b;
-    margin-left: 7vh;
+    margin-left: 45px;
     animation: fadeInLeft 2s 0.5s;
 }
 }
@@ -177,7 +177,10 @@ a {
 }
 
 .skillCon {
-    margin-left: 12vh;
+    margin-left: 80px;
+    .line1, .line2, .line3, .line4 {
+        width: 450px;
+    }
 h3 {
     margin-top: 20px;
 }
@@ -235,9 +238,9 @@ h3 {
     }
 }
 .skillCon {
-    margin-left: 30vh;
+    margin-left: 200px;
 .line1, .line2, .line3, .line4 {
-    width: 100vh;
+    width: 500px;
     
     }
 }
