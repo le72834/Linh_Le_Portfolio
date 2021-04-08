@@ -4,7 +4,7 @@ export default {
     props: ["item", "mediatype"],
 
     template: `
-        <section class="lightbox">
+        <section class="lightbox container">
             <div class="lightboxScroll">
                 <div class="nav-position">
                     <div class="main-nav-con scroll-menu">
@@ -16,13 +16,9 @@ export default {
                         </div>
 
                         </div><!--Close nav position-->
-                    
-                
-
-                
                 <component :is="currentComponent" :work="item"></component>
             </div>
-            
+           
 
         </section>`,
         computed: {
