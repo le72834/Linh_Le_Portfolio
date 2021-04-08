@@ -50,23 +50,20 @@
                 <buttoncomponent v-for="item in mediaCollection" :item="item" :key="item.id" @setmediatype="setComponent"></buttoncomponent>
 
                 <lightbox :item="currentItem" :mediatype="mediaType"></lightbox>
-
+                <!-- <thecontent :item="currentItem" @cycle="loadnext"></thecontent> -->
             </section><!--Close app-->
 
             <div class="resume">
                 <h2>Work with me!</h2>
                 <p>Let's check my resume to get know more about me!</p>
-                <a href="#">Download my resume</a>
+                <a href="images/resume.pdf">Download my resume</a>
             </div>
             <footer>
                 <p>© Linh Le. All Right Reserved.</p>
                 <nav class="socialCon">
                     <h2 class="hidden">Social Navigation</h2>
                     <ul>
-                        <li><a href="https://www.facebook.com/"><img src="images/facebook.svg" alt="facebook icon"></a></li>
-                        <li><a href="https://twitter.com/"><img src="images/twitter.svg" alt="twitter icon"></a></li>
-                        <li><a href="https://www.instagram.com/"><img src="images/insta.svg" alt="instagram icon"></a></li>
-                        <li><a href="https://www.youtube.com/"><img src="images/utube.svg" alt="youtube icon"></a></li>
+                        <li><a href="https://www.linkedin.com/in/linh-le-922b73203/"><img src="images/linked.svg" alt="icon"></a></li>
                         
                     </ul>
                 </nav>

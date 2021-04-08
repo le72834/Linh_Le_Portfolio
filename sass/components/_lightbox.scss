@@ -83,6 +83,9 @@
     display: block;
     
     .image-player {
+        img {
+            width: 70%;
+        }
         h2 {
             font-size: 22px;
             text-transform: uppercase;
@@ -103,6 +106,12 @@
                 margin-top: 15px;
             }
         }
+        .pic-con {
+            img {
+                width: 80%;
+                margin: 10px 0px;
+            }
+        }
         .process-con {
             h2 {
                 margin-top: 20px;
@@ -115,7 +124,39 @@
                 margin: 10px 0px;
             }
         }
+        .process-text {
+            margin-top: 30px;
+        }
+        .lead-contact {
+            width: 90%;
+            text-align: center;
+            margin: 20px 0px;
+            h3 {
+                font-size: 20px;
+                font-style: italic;
+                margin: 20px 0px;
+            }
+            a {
+            color: $second-text-color;
+            border: 2px solid $second-text-color;
+            padding: 10px;
+            border-radius: 8px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            transition: all 0.3s;
+            background: none;
+            font-size: 14px;
+            &:hover {
+                color:#fff;
+                background-color: $second-text-color;
+                transition: all 0.3s;
+            
+            }
+            }
+        }
     }
+    
 }
 
 
@@ -152,7 +193,17 @@
                 padding-left: 25px;
             }
         }
-        
+        .pic-con{
+            img {
+                padding-left: 25px;
+            }
+        }
+    }
+    .lead-contact {
+        margin-bottom: 40px;
+        h3 {
+            margin-bottom: 30px;
+        }
     }
 }
 @media screen and (min-width: $desktop-size) {
@@ -168,6 +219,23 @@
         .process-con {
             img {
                 padding-left: 30px;
+            }
+        }
+        .pic-con {
+            img {
+                padding-left: 30px;
+            }
+        }
+        .lead-contact {
+            margin-bottom: 50px;
+           
+        }
+        .info-team {
+            p{margin-right: 60px;}
+        }
+        .info-con1 {
+            p {
+                margin-right: 40px;
             }
         }
     }

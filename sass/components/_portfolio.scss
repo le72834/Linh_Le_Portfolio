@@ -93,7 +93,7 @@
                 top: 100px;
                 left: 20px;
                 font-size: 18px;
-                color:black;
+                color: white;
                 font-weight: bold;
 
             }
@@ -114,7 +114,7 @@
         
         
     }&:hover {
-        opacity: 0.7;
+        opacity: 0.5;
         
         transform: scale(0.98);
     }
@@ -124,7 +124,8 @@
 @media screen and (min-width: $tablet-size) {
     .intro {
         width: 100%;
-        background-image: url(../images/hero_image.svg);
+        background-image: url(../images/hero_image1.svg);
+        
         background-position: center ;
         background-repeat: no-repeat;
         background-size: auto;
@@ -194,15 +195,16 @@
                 top: 300px;
                 left: 20px;
                 font-size: 30px;
-                color:black;
+                color:white;
                 font-weight: bold;
-
+                text-shadow: 2px 2px 2px black;
             }
             h4 {
                 top: 350px;
                 left: 20px;
                 font-size: 20px;
-                color: $second-text-color;
+                color: rgb(248, 197, 192);
+                text-shadow: 2px 2px 2px black;
             }
            
         }
