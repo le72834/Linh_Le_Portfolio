@@ -15,7 +15,6 @@
     $db_pass = 'portfolio_info';
     // $db_user = 'root';
     // $db_pass = 'root';
-
     try{
         $pdo = new PDO($dsn, $db_user, $db_pass);
         //var_dump($pdo);
